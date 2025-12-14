@@ -1,6 +1,7 @@
 name: Push Backend Docker Image
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'server/**'
@@ -31,4 +32,4 @@ jobs:
         with:
           context: ./server
           push: true
-          tags: chrisleeeee/group-ironmen-tracker-backend:latest
+          tags: sameig/gim-be:latest
